@@ -16,7 +16,7 @@ export async function extractDataFromImages(images) {
             ]
         }));
 
-        const response = await fetch('backend-gemini-extractor.vercel.app/api/extrair-dados', {
+        const response = await fetch('https://backend-gemini-extractor.vercel.app/api/extrair-dados', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
