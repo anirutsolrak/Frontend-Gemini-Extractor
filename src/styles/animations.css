@@ -1,0 +1,28 @@
+@keyframes glowBorder {
+    0% { box-shadow: 0 0 5px #C89B3C; }
+    50% { box-shadow: 0 0 20px #C89B3C; }
+    100% { box-shadow: 0 0 5px #C89B3C; }
+}
+
+@keyframes spinWheel {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.winner-reveal {
+    animation: popIn 0.5s ease-out forwards;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0); opacity: 0; }
+    70% { transform: scale(1.1); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.glow-effect {
+    animation: glowBorder 2s infinite;
+}
+
+.wheel-spin {
+    animation: spinWheel 8s cubic-bezier(0.1, 0.7, 0.1, 1) forwards;
+}
