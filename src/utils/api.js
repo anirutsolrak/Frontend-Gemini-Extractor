@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Certifique-se de configurar sua chave de API de forma segura, como variável de ambiente no Vercel
-const geminiApiKey = process.env.VITE_PUBLIC_GEMINI_API_KEY;
+const geminiApiKey = import.meta.env.VITE_GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(geminiApiKey);
 
 
